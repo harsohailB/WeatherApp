@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Weather App</title> 
+{% endblock %}
+
+{% block body %} 
+<h1>Weather App</h1>
+
+<p> Location: {{ weather.location }} </p>
+<p> Temperature: {{ weather.temperature }} </p>
+<p> Humidity: {{ weather.humidity }} </p>
+<p> Conditions: {{ weather.conditions }} </p>
+
+{% endblock %}

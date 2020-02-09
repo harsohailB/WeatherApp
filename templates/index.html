@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Weather App</title> 
+{% endblock %}
+
+{% block body %} 
+<div class = "container">
+    <div class = 'title'>
+        <h1>Weather App</h1>
+    </div>
+
+    <div class = 'instruction'>
+        <h2>Enter location:</h2>
+    </div>
+
+    <div class = 'form'>
+        <form action = '/' method = 'POST'>
+            City: <input type = 'text' name = 'city' id = 'city'>
+            <br>
+            Country: <input type = 'text' name = 'country' id = 'country'>
+            <br>
+            <input type = 'submit' value = 'Enter'>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

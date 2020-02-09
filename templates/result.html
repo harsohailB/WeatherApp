@@ -1,15 +1,21 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Weather App</title> 
+<title>Weather Results</title> 
 {% endblock %}
 
 {% block body %} 
-<h1>Weather App</h1>
+<div class = "container">
+    <div class = 'title'>
+        <h1>Weather for {{ weather.location }}</h1>
+    </div>
 
-<p> Location: {{ weather.location }} </p>
-<p> Temperature: {{ weather.temperature }} </p>
-<p> Humidity: {{ weather.humidity }} </p>
-<p> Conditions: {{ weather.conditions }} </p>
+    <div class = 'info'>
+        <h2> Location: {{ weather.location }} </h2>
+        <h2> Temperature: {{ weather.temperature }} C</h2>
+        <h2> Humidity: {{ weather.humidity }}%</h2>
+        <h2> Conditions: {{ weather.conditions }} </h2>
+    </div>
+</div>
 
 {% endblock %}

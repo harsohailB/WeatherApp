@@ -1,3 +1,9 @@
+# File Name: weather.py
+# Author: Harsohail Brar
+# Date: Feb. 9, 2020
+
+# Weather class holds weather data for a specific location to be accessed 
+# by result.html
 class Weather:
 
     def __init__(self, location, temperature, humidity, conditions):

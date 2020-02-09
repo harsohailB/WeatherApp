@@ -64,7 +64,7 @@ input:-webkit-autofill {
     -webkit-text-fill-color: #fff !important;
 }
 
-button {
+input[type="submit"] {
   border: 0;
   padding: 8px 20px;
   margin: 0 2px;
@@ -78,6 +78,6 @@ button {
   font-weight: 100;
 }
 
-button:active {
+input[type="submit"]:active {
   outline: none;
 }
